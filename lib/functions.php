@@ -8,16 +8,17 @@ la logique pour choisir la page à charger
 
 function getContent(){
 	if(!isset($_GET['page'])){
-		include '/../pages/home.php';
+	include(dirname(__FILE__).'/../pages/home.php');
+	include(dirname(__FILE__).'/../pages/bio.php');
+	include(dirname(__FILE__).'/../pages/contact.php');
 	} else {
-		include '/../pages/bio.php';
-		include '/../pages/contact.php';
+		
 	}
 }
 
 function getPart($name){
-	include '/../parts/'.$name.'.php';
+	include(dirname(__FILE__).'/../parts/'.$name.'.php');
 }
 function getUserData() {
-	echo json_decode(file_get_contents("/../data/user.json",FILE_USE_INCLUDE_PATH));
+	var_dump(json_decode(file_get_contents(__DIR__."/../data/user.json")));
 }
