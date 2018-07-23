@@ -1,6 +1,4 @@
-<?php 
-include(dirname(__FILE__).'/../parts/header.php');
- ?>
+
 <h1>maison sucré maison</h1>
 <div>
 	<h1>Bonsoir sur le dédale d'include</h1>
@@ -15,6 +13,3 @@ include(dirname(__FILE__).'/../parts/header.php');
 	<h4>Vous avez été prévenu !</h4>
 </div>
 <div><h5>Rien</h5></div>
-<?php 
- include(dirname(__FILE__).'/../parts/footer.php');
- ?>
