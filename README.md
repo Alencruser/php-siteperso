@@ -1,3 +1,5 @@
+Heroku deployment : http://phpsiteperso.herokuapp.com/public/
+
 Mini-site prise en main
 ---
 
